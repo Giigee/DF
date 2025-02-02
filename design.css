@@ -27,7 +27,8 @@ body {
 img {
     max-width: 100%;
     height: auto;
-    image-align: center;
+    display: block;
+    margin: 0 auto;
 }
 figcaption {
     text-align: center;
@@ -38,7 +39,8 @@ figcaption {
 video {
     max-width: 100%;
     height: auto;
-    video-align: center;
+    display: block;
+    margin: 0 auto;
 }
 footer {
   margin-top: 100px;
