@@ -1,7 +1,31 @@
-.header {
-    padding: 60px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-    font-size: 30px;
+a, a:visited {
+    color: #ffffff;
   }
+  a:hover {
+    color: #f694f8;
+  }
+header {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+  }
+h1, h2 {
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 50px;
+    background: #000000;
+    color: #fff;
+  }
+img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+  margin-top: 100px;
+  text-align: center;
+}
