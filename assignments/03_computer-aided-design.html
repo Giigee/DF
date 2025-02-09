@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Fabrication</title>
+    <link rel="stylesheet" href="../design.css">
+</head>
+<body>
+    <header>
+        <h1>Computer aided design</h1>
+    </header> 
+    <main>
+        <h2>Background</h2>
+        <p>Computer-Aided Design or CAD is a powerful tool that enables us to create precise and complex digital models that are used in various fields such as engineering, architecture, and product development. As a beginner in CAD and 3D modeling, this is my first experience using such software. I followed the "Manual: Modeling for Product Design" tutorial from the FreeCAD website, which modeled a LEGO shape. My goal of this tutorial is to understand the interface of FreeCAD software and basic 3D modeling principles. Throughout the course, I would liek to learn how to create parametric designs that can be easily modified and optimized for manufacturing or 3D printing.</p>
+
+        <h2>Sketcher workbench</h2>
+        <p>In FreeCAD's Sketcher Workbench, real geometry is used to create solid features, while construction geometry is only for reference and does not contribute to the final 3D shape. Real geometry is good for defining the structure of the model. On the other hand, construction geometry is good for aligning and constraining elements. For my LEGO design, I used basic sketching tools such as circles and rectangles to outline the LEGO shape. It is alos possible to sketch rectangle with polyline tool, however, the ready-to-use rectangle tool is best option due to my shape.</p>
+
+        <h2>Constraints</h2>
+        <p>A sketch in FreeCAD has Degrees of Freedom or DOF, which represent the number of ways the object or point can move or change. A fully constrained sketch has zero DOF, meaning all elements are locked in place. Achieving a fully constrained sketch is recommended because it ensures that the design remains stable and predictable when modifications are made. For my design, I applied various constraints such as symmetry, equal, and coincident constraints to align elements correctly. The symmetry constraint helped maintain balance in the design, while the equal constraint ensured uniformity. The automatic dimension tool and external geometry tool are used for constraining the new sketches to the background sketches. </p>
+
+        <h2>Part Design workbench</h2>
+        <p>After creating a fully constrained sketch, I used the Part Design Workbench to convert 2D sketches into 3D models. With the Pad (extrude) I created the base shape of the LEGO brick. The Pocket tool was useful for making holes, such as those found on the underside of a LEGO piece. The Linear Pattern tool enabled me to duplicate features multiple times efficiently. Since I was making LEGO brick, additive and subtractive modeling techniques helped me refine my design efficiently. Finally, I changed the appearance and material of my LEGO brick.</p>
+
+        <h2>Spreadsheet workbench</h2>
+        <p>To make my design parametric, I used FreeCAD's Spreadsheet Workbench and defined key dimensions such as brick width, height, and cirlce diameter in a spreadsheet. Finally, I added the ZIP file of my project to my HTML website. To do that, I uploaded the ZIP file into my web server and inserted a download link.</p>
+        
+
+        <a href="../CAD/03_computer-aided-design.FCStd.zip" download>Download ZIP File</a><br>
+
+        <a href="../assignments.html">Back to Assignments</a>
+        <footer>
+            <p>&copy; Giiguulen Enkhsaikhan 2025</p>
+        </footer>
+    </main>  
+</body>
+</html>
