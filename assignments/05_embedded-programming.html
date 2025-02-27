@@ -11,14 +11,14 @@
         <h1>Embedded programming</h1>
     </header> 
     <main>
-        <h2></h2>
-        <p></p>
+        <h2>Microcontroller</h2>
+        <p>Microcontroller or MCU is an chip containing CPU and relevant modules that controls an electronic device. In other words, it is a small computer designed to do specific operations in an embedded system. Most modern electronic devices are equipped with MCUs. From cell phones to flashing lights in christmas decorations, MCUs enable them to process data, interact with sensors and operate commands. They can be used for controling systems making automations, reading and connecting sensors. With beginner friendly MCUs such as Seeed Studio XIAO RP2040 or Arduino Uno, its possible to make blinking of LED lights, button controlled LED lights without any additional equipments. However, possible projects with this MCU include, temperature sensing, LED controlling through web server and interactive gaming using push buttons.</p>
 
-        <h2></h2>
-        <p></p>
+        <h2>Voltage, Current, and Resistance</h2>
+        <p> Voltage, current, and resistance are fundamental concepts of electronics. Voltage is the difference in electric potential between two points in a circuit and it's measured in volts. Voltage comes from sourches like batteries and generators. Current is the flow of electric charge between two points and it's measured in amperes. Current flows from positive charge to negative charge, unlike electrons. Resistance is the electric resistance of an object to the flow of electric current and it's measured in ohms. These three concepts relates to each other through Ohm's law or V=I*R where V is voltage, I is current, and R is resistance. In other words, the current through a conductor between two points is directly proportional to the voltage across the two points and inversely proportional to the resistance between them. </p>
 
-        <h2></h2>
-        <p></p>
+        <h2>Safety considerations</h2>
+        <p>Working at the electronics workbench means working with high temperature (soldering iron), high voltage and toxic gas. Therefore, it is important to consider the basic safety rules such as no liquids in the workspace and well vetilation of the area. Before soldering, the workbench should be cleared and any flammable materials such as plastics should be removed. Always check if the devices are turned off before working and after working. There shoudn't be any loose clothing, hair or jewelery. During soldering, turn on the air filter fan with carbon filter to avoid any toxic gas. After the work is done, clean the table and return all the devices in the correct places and label if needed. </p>
 
         <figure>
             <img 
@@ -28,11 +28,15 @@
             <figcaption>Soldering</figcaption>
         </figure>
 
-        <h2></h2>
-        <p></p>
+        <p>Here is a picture of my XIAO board after I soldered each segments and made sure they are not touching each other. </p>
 
-        <h2></h2>
-        <p></p>
+
+        <h2>Arduino sketch</h2>
+        <p>An Arduino sketch consists of key elements that control the operation of MCUs such as #define setup(), and loop(). #define is used for defining constants. setup() function is used for initilizing settings and runs once when the Arduino starts. setup() can be used to pin modes and start using/importing libraries. The loop() function runs continuously it is used to run the main code. pinMode() function configures the specified pin to behave either as an input or an output which is used for reading or controlling external components. digitalWrite() function writes a HIGH (on)or a LOW (off) value to a digital pin. It can be used for turning on and off LEDs, motors, and other devices. Different variable types like int (integers), float (decimal values), bool (true/false), and char (characters) store and manage data in a program. Conditional statements, such as if...else, are used to control the flow of the program.</p>
+
+        <h2>Libraries in NEOPIXEL</h2>
+        <p> Libraries in Arduino IDE are quite useful since they provide a pre-written functions for specific components. I used the Adafruit NeoPixel library to control the onboard NeoPixel LED on my Seeed Studio XIAO RP2040. After choosing the correct board and port, I initialized the NeoPixel. The in-device LED was blinking, demonstrating how libraries simplify complex tasks.
+        </p>
 
         <video autoplay loop muted> 
             <source src="../media/05_neopixel.mp4" type="video/mp4">
